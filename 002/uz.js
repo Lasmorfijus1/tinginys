@@ -113,11 +113,27 @@ console.log('-------------- 8 -----------------');
 let dalyvis1 = rand(1, 4);
 let dalyvis2 = rand(1, 4);
 // Išvesti dalyvių pasirinktus skaičius ir pranešimą "Laimėjo", jeigu dalyvių skaičių suma didesnė nei 6 arba tie skaičiai yra vienodi. Pranešimą "Pralaimėjo" - priešingu atveju 
+ if ((dalyvis1 + dalyvis2) > 6 || dalyvis1 == dalyvis2) {
+    console.log('Laimėjo. Dalyvis 1: ',dalyvis1,' Dalyvis 2: ',dalyvis2);
+ } else {
+   console.log('Pralaimėjo. Dalyvis 1: ',dalyvis1,' Dalyvis 2: ',dalyvis2);
+ }
+
+
 
 console.log('-------------- 9 -----------------');
 //9.
 let daug = rand(1000000, 9999999);
 // Išvesti skaičių daug ir suskaičiuoti iš kelių duotų skaičių: 5, 10, 33 jis dalijasi be liekanos. Rezultatą išvesti.
+
+if (daug % 5 == 0 || daug % 10 == 0 || daug % 33 == 0   ) {
+    console.log('Dalijasi be liekanos. Liekana iš 5:', daug % 5, ' Liekana iš 10: ', daug % 10, ' Liekana iš 33: ', daug % 33);
+    } else {
+  console.log('Nesidalija be liekanos. Liekana iš 5:', daug % 5, ' Liekana iš 10: ', daug % 10, ' Liekana iš 33: ', daug % 33);
+     }
+
+
+
 
 console.log('-------------- 10 -----------------');
 //10.
@@ -125,37 +141,13 @@ let as = rand(0, 2) ? (rand(0, 1) ? 'popierius' : 'zirklės') : 'akmuo';
 let tu = rand(0, 2) ? (rand(0, 1) ? 'popierius' : 'zirklės') : 'akmuo';
 // Išvesti as ir tu kintamuosius ir kas laimėjo as ar tu
 
-
-// //8.
-// let dalyvis1 = rand(1, 4);
-// let dalyvis2 = rand(1, 4);
-// // Išvesti dalyvių pasirinktus skaičius ir pranešimą "Laimėjo", jeigu dalyvių skaičių suma didesnė nei 6 arba tie skaičiai yra vienodi. Pranešimą "Pralaimėjo" - priešingu atveju 
-// if ((dalyvis1 + dalyvis2) > 6 || dalyvis1 == dalyvis2) {
-//     console.log('Laimėjo. Dalyvis 1: ',dalyvis1,' Dalyvis 2: ',dalyvis2);
-// } else {
-//     console.log('Pralaimėjo. Dalyvis 1: ',dalyvis1,' Dalyvis 2: ',dalyvis2);
-// }
-
-// //9.
-// let daug = rand(1000000, 9999999);
-// // Išvesti skaičių daug ir suskaičiuoti iš kelių duotų skaičių: 5, 10, 33 jis dalijasi be liekanos. Rezultatą išvesti.
-// if (daug % 5 == 0 || daug % 10 == 0 || daug % 33 == 0   ) {
-//     console.log('Dalijasi be liekanos. Liekana iš 5:', daug % 5, ' Liekana iš 10: ', daug % 10, ' Liekana iš 33: ', daug % 33);
-// } else {
-//     console.log('Nesidalija be liekanos. Liekana iš 5:', daug % 5, ' Liekana iš 10: ', daug % 10, ' Liekana iš 33: ', daug % 33);
-// }
-
-// //10.
-// let as = rand(0, 2) ? (rand(0, 1) ? 'popierius' : 'zirklės') : 'akmuo';
-// let tu = rand(0, 2) ? (rand(0, 1) ? 'popierius' : 'zirklės') : 'akmuo';
-// // Išvesti as ir tu kintamuosius ir kas laimėjo as ar tu
-// console.log('------- Popierius, žirklės, akmuo --------')
-// console.log('Aš: ', as, ', Tu:', tu);
-// if (as == 'akmuo' && tu == 'zirkles' || as == 'popierius' && tu == 'akmuo' || as == 'zirklės' && tu == 'popierius') {
-//     console.log('Aš laimėjau');
-// } else if (tu == as) {
-//     console.log('Lygiosios');
-// }
-// else {
-//     console.log('Tu laimėjai');
-// }
+console.log('------- Popierius, žirklės, akmuo --------')
+console.log('Aš: ', as, ', Tu:', tu);
+ if (as == 'akmuo' && tu == 'zirkles' || as == 'popierius' && tu == 'akmuo' || as == 'zirklės' && tu == 'popierius') {
+     console.log('Aš laimėjau');
+ } else if (tu == as) {
+     console.log('Lygiosios');
+ }
+else {
+  console.log('Tu laimėjai');
+ }
