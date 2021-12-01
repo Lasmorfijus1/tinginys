@@ -54,14 +54,45 @@ if (eilesNumeris % 2) {
 }
 
 //5.
-let raideABC;
+
 //Pasinaudojus funkcija rand() sugeneruoti atsitiktinę raidę A, B ar C ir priskirti ją kintamajam raideABC. Kintamąjį išvesti į konsolę
+console.log('-------------- 5 -----------------');
+
+let raideABC = rand(1,2,3);
+if ( raideABC == 1) {
+    console.log('5. Uzduotis: A');
+} else if ( raideABC == 2) {
+    console.log('5. Uzduotis: B');
+} else if ( raideABC == 3) {
+    console.log('5. Uzduotis: C');
+}
+
+
+
+console.log('-------------- 6 -----------------');
 
 //6.
 let pirmas = rand(0, 2);
 let antras = rand(0, 2);
 // Išvesti abu skaičius ir sprendimą ar yra didesnė tų skaičių sandauga ar suma 
+let sandauga = pirmas * antras;
+let suma = pirmas + antras;
+if (sandauga > suma ) {
+    console.log('6. Didesnė sandauga: ', 'Sandauga: ', sandauga,'Suma: ', suma );
+}
+else(sandauga < suma) 
+{
+    console.log ('Didesnė suma','Suma: ', suma,'Sandauga: ', sandauga);
+}
 
+
+
+
+
+
+
+
+console.log('-------------- 7 -----------------');
 //7.
 let asilai = rand(0, 2);
 let karves = rand(0, 2);
