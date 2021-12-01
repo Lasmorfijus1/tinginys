@@ -97,8 +97,17 @@ console.log('-------------- 7 -----------------');
 let asilai = rand(0, 2);
 let karves = rand(0, 2);
 // Išvesti asilų ir karvių skaičių ir išvesti rezultatą "gyvulių yra" kai yra nors viena karvė ar asilas arba "gyvulių nėra" jeigu nėra nei karvių nei asilų
+let bendrasSkaicius = asilai + karves;
+console.log ('Bendras skaičius: ', bendrasSkaicius, 'Asilų: ', asilai, 'Karvių ', karves);
+if (bendrasSkaicius >= 1) {
+    console.log('Gyvulių yra', bendrasSkaicius);
+}
+else  {
+    console.log ('Gyvulių nėra', bendrasSkaicius);
+}
 
 
+console.log('-------------- 8 -----------------');
 //8.
 let dalyvis1 = rand(1, 4);
 let dalyvis2 = rand(1, 4);
