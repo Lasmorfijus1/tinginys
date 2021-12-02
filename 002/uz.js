@@ -19,11 +19,21 @@ if (egzaminoRezultatas >= 4) {
 let eksperimentoRezultatas = rand(1, 4);
 // Išvesti eksperimento rezultatą ir sprendimą ar pavyko. Pavykęs eksperimentas tas, kurio rezultatas 1 arba 4
 console.log('-------------- 2 -----------------');
-if (eksperimentoRezultatas == 1) {
+if (eksperimentoRezultatas == 1 ) {
     console.log('Pavyko!', eksperimentoRezultatas);
 } else if (eksperimentoRezultatas == 4) {
     console.log('Pavyko!', eksperimentoRezultatas);
 } else {
+    console.log('Kažkas ne taip :(', eksperimentoRezultatas);
+}
+// Loginis operatorius su sudėtinėmis sąlygomis
+
+console.log('-------------- 2 su sudėtine -----------------');
+
+if (eksperimentoRezultatas == 1 || eksperimentoRezultatas == 4 ) {
+console.log('Pavyko!', eksperimentoRezultatas) 
+}
+else {
     console.log('Kažkas ne taip :(', eksperimentoRezultatas);
 }
 
@@ -86,12 +96,6 @@ else(sandauga < suma)
 }
 
 
-
-
-
-
-
-
 console.log('-------------- 7 -----------------');
 //7.
 let asilai = rand(0, 2);
@@ -106,6 +110,16 @@ else  {
     console.log ('Gyvulių nėra', bendrasSkaicius);
 }
 
+// 7 - antras sprendimas
+// let asilai = rand(0, 2);
+// let karves = rand(0, 2);
+// if (asilai + karves) {
+// console.log ('gyvulių yra', asilai, karves);
+
+// }
+// else {
+//     console.log ('gyvulių nėra', asilai, karves);
+// }
 
 
 console.log('-------------- 8 -----------------');
@@ -132,8 +146,19 @@ if (daug % 5 == 0 || daug % 10 == 0 || daug % 33 == 0   ) {
   console.log('Nesidalija be liekanos. Liekana iš 5:', daug % 5, ' Liekana iš 10: ', daug % 10, ' Liekana iš 33: ', daug % 33);
      }
 
-
-
+// Antras sprendimas
+let daug = rand(1000000, 9999999);
+let kiek = 0;
+if( !(daug % 5)) {
+    kiek++;
+}
+if( !(daug % 10)  ) {
+    kiek++;
+}
+if( !(daug % 33)  ) {
+    kiek++;
+}
+console.log (kiek, daug);
 
 console.log('-------------- 10 -----------------');
 //10.
